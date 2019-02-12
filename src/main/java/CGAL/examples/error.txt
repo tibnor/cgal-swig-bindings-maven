@@ -1,0 +1,72 @@
+AABB_polyhedron_facet_intersection_example.java compiled
+AABB_polyhedron_facet_intersection_example run OK
+AABB_triangle_3_example.java compiled
+AABB_triangle_3_example run OK
+advancing_front_reconstruction.java compiled
+advancing_front_reconstruction run OK
+conforming.java compiled
+conforming run OK
+hds_incremental_builder.java compiled
+hds_incremental_builder run OK
+hds_prog_halfedge_iterator.java compiled
+hds_prog_halfedge_iterator run OK
+intersect_triangle_soup_with_polyline_aabb.java compiled
+intersect_triangle_soup_with_polyline_aabb run OK
+mesh_global.java compiled
+mesh_global run OK
+mesh_optimisation.java compiled
+mesh_optimisation run OK
+mesh_polyhedral_domain.java compiled
+mesh_polyhedral_domain run OK
+Point_set_processing_3_test.java compiled
+Point_set_processing_3_test run OK
+Polyhedron_incremental_builder.java compiled
+Polyhedron_incremental_builder run OK
+polyhedron_prog_cube.java compiled
+polyhedron_prog_cube run OK
+regular_3.java compiled
+regular_3 run OK
+remove_outliers_example.java compiled
+remove_outliers_example run OK
+simple_triangulation_3.java compiled
+simple_triangulation_3 run OK
+test_aabb.java compiled
+test_aabb run OK
+test_as2.java compiled
+test_as2 run OK
+test_box_intersection_d.java compiled
+test_box_intersection_d run OK
+test_convex_hull_2.java compiled
+test_convex_hull_2 run OK
+test_convex_hull_3.java compiled
+test_convex_hull_3 run OK
+test_dt3.java compiled
+test_dt3 run OK
+test_interpolation.java compiled
+test_interpolation run OK
+test_kernel.java compiled
+test_kernel run OK
+test_mesh_2.java compiled
+test_mesh_2 run OK
+test_mesh_3.java compiled
+test_mesh_3 run OK
+test_operators.java compiled
+test_operators run OK
+test_pmp.java compiled
+test_pmp run Error
+test_polyhedron.java compiled
+test_polyhedron run OK
+test_polyline_simplification_2.java compiled
+test_polyline_simplification_2 run OK
+test_rt3.java compiled
+test_rt3 run OK
+test_sp.java compiled
+test_sp run OK
+test_surface_mesher.java compiled
+test_surface_mesher run OK
+test_t2.java compiled
+test_t2 run OK
+triangulation_prog1.java compiled
+triangulation_prog1 run OK
+vd_2_point_location.java compiled
+vd_2_point_location run OK

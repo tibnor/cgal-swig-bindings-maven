@@ -1,0 +1,502 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f095b547cfb, pid=10486, tid=10487
+#
+# JRE version: OpenJDK Runtime Environment (10.0.2+13) (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.4)
+# Java VM: OpenJDK 64-Bit Server VM (10.0.2+13-Ubuntu-1ubuntu0.18.04.4, mixed mode, tiered, compressed oops, serial gc, linux-amd64)
+# Problematic frame:
+# C  [libCGAL_Polygon_mesh_processing.so+0xa6cfb]  triangulate_faces(std::pair<Input_iterator_wrapper<SWIG_Polyhedron_3::CGAL_Facet_handle<CGAL::Polyhedron_3<CGAL::Epick, CGAL::Polyhedron_items_with_id_and_info_3<JavaData>, CGAL::HalfedgeDS_default, std::allocator<int> > >, CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > >, std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > > > > >, Input_iterator_wrapper<SWIG_Polyhedron_3::CGAL_Facet_handle<CGAL::Polyhedron_3<CGAL::Epick, CGAL::Polyhedron_items_with_id_and_info_3<JavaData>, CGAL::HalfedgeDS_default, std::allocator<int> > >, CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > >, std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > > > > > >, Polyhedron_3_wrapper<CGAL::Polyhedron_3<CGAL::Epick, CGAL::Polyhedron_items_with_id_and_info_3<JavaData>, CGAL::HalfedgeDS_default, std::allocator<int> >, SWIG_Polyhedron_3::CGAL_
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P" (or dumping to /home/jon/git/cgal-swig-bindings/examples/java/core.10486)
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: test_pmp
+
+Host: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 1 cores, 7G, Ubuntu 18.04.1 LTS
+Time: Wed Feb  6 11:47:47 2019 CET elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f0994011000):  JavaThread "main" [_thread_in_native, id=10487, stack(0x00007f099b657000,0x00007f099b758000)]
+
+Stack: [0x00007f099b657000,0x00007f099b758000],  sp=0x00007f099b756060,  free space=1020k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libCGAL_Polygon_mesh_processing.so+0xa6cfb]  triangulate_faces(std::pair<Input_iterator_wrapper<SWIG_Polyhedron_3::CGAL_Facet_handle<CGAL::Polyhedron_3<CGAL::Epick, CGAL::Polyhedron_items_with_id_and_info_3<JavaData>, CGAL::HalfedgeDS_default, std::allocator<int> > >, CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > >, std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > > > > >, Input_iterator_wrapper<SWIG_Polyhedron_3::CGAL_Facet_handle<CGAL::Polyhedron_3<CGAL::Epick, CGAL::Polyhedron_items_with_id_and_info_3<JavaData>, CGAL::HalfedgeDS_default, std::allocator<int> > >, CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > >, std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_max_base_with_id_and_info<CGAL::HalfedgeDS_list_types<CGAL::Epick, CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_with_id_and_info_3<JavaData> >, std::allocator<int> >, CGAL::Boolean_tag<false>, unsigned long, JavaData> > > > > > >, Polyhedron_3_wrapper<CGAL::Polyhedron_3<CGAL::Epick, CGAL::Polyhedron_items_with_id_and_info_3<JavaData>, CGAL::HalfedgeDS_default, std::allocator<int> >, SWIG_Polyhedron_3::CGAL_
+C  0x0000000000000030
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  CGAL.Polygon_mesh_processing.CGAL_Polygon_mesh_processingJNI.triangulate_faces__SWIG_1(Ljava/util/Iterator;JLCGAL/Polyhedron_3/Polyhedron_3;)V+0
+j  CGAL.Polygon_mesh_processing.CGAL_Polygon_mesh_processing.triangulate_faces(Ljava/util/Iterator;LCGAL/Polyhedron_3/Polyhedron_3;)V+6
+j  test_pmp.test_meshing_functions()V+344
+j  test_pmp.main([Ljava/lang/String;)V+0
+v  ~StubRoutines::call_stub
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000008
+
+Register to memory mapping:
+
+RAX=0x00007f0994139d20 is an unknown value
+RBX=0x00007f099b7564e0 is pointing into the stack for thread: 0x00007f0994011000
+RCX=0x0000000000000001 is an unknown value
+RDX=0x0000000000000000 is an unknown value
+RSP=0x00007f099b756060 is pointing into the stack for thread: 0x00007f0994011000
+RBP=0x00007f099b756120 is pointing into the stack for thread: 0x00007f0994011000
+RSI=0x00007f099b756250 is pointing into the stack for thread: 0x00007f0994011000
+RDI=0x00007f099b756250 is pointing into the stack for thread: 0x00007f0994011000
+R8 =0x0000000000000004 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x00007f09940008d0 is an unknown value
+R11=0x0000000000000001 is an unknown value
+R12=0x00007f099413b490 is an unknown value
+R13=0x00007f099b756420 is pointing into the stack for thread: 0x00007f0994011000
+R14=0x00007f099b7562a0 is pointing into the stack for thread: 0x00007f0994011000
+R15=0x00007f099b7560c0 is pointing into the stack for thread: 0x00007f0994011000
+
+
+Registers:
+RAX=0x00007f0994139d20, RBX=0x00007f099b7564e0, RCX=0x0000000000000001, RDX=0x0000000000000000
+RSP=0x00007f099b756060, RBP=0x00007f099b756120, RSI=0x00007f099b756250, RDI=0x00007f099b756250
+R8 =0x0000000000000004, R9 =0x0000000000000000, R10=0x00007f09940008d0, R11=0x0000000000000001
+R12=0x00007f099413b490, R13=0x00007f099b756420, R14=0x00007f099b7562a0, R15=0x00007f099b7560c0
+RIP=0x00007f095b547cfb, EFLAGS=0x0000000000010202, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f099b756060)
+0x00007f099b756060:   00007f099b756098 00007f099b756360
+0x00007f099b756070:   00007f099b7560a0 0000000000000000
+0x00007f099b756080:   0000000000000020 0000000000000000
+0x00007f099b756090:   00007f099b756190 00007f0994139d20 
+
+Instructions: (pc=0x00007f095b547cfb)
+0x00007f095b547cdb:   3e ff ff 48 8b 84 24 e0 00 00 00 48 3b 84 24 80
+0x00007f095b547ceb:   00 00 00 74 38 48 8b 00 48 89 44 24 38 48 8b 10
+0x00007f095b547cfb:   48 8b 4a 08 48 8b 49 08 48 39 4a 10 74 cd 48 8b
+0x00007f095b547d0b:   74 24 48 48 3b 74 24 50 75 ab 48 8b 14 24 48 8b 
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007f09940bda90, length=9, elements={
+0x00007f0994011000, 0x00007f099408a800, 0x00007f099408c800, 0x00007f09940a1000,
+0x00007f09940a3000, 0x00007f09940a5000, 0x00007f09940a7000, 0x00007f0994106800,
+0x00007f09940c5000
+}
+
+Java Threads: ( => current thread )
+=>0x00007f0994011000 JavaThread "main" [_thread_in_native, id=10487, stack(0x00007f099b657000,0x00007f099b758000)]
+  0x00007f099408a800 JavaThread "Reference Handler" daemon [_thread_blocked, id=10489, stack(0x00007f097a2ab000,0x00007f097a3ac000)]
+  0x00007f099408c800 JavaThread "Finalizer" daemon [_thread_blocked, id=10490, stack(0x00007f097a1aa000,0x00007f097a2ab000)]
+  0x00007f09940a1000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=10491, stack(0x00007f0979559000,0x00007f097965a000)]
+  0x00007f09940a3000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=10492, stack(0x00007f0979458000,0x00007f0979559000)]
+  0x00007f09940a5000 JavaThread "C1 CompilerThread1" daemon [_thread_blocked, id=10493, stack(0x00007f0979357000,0x00007f0979458000)]
+  0x00007f09940a7000 JavaThread "Sweeper thread" daemon [_thread_blocked, id=10494, stack(0x00007f0979256000,0x00007f0979357000)]
+  0x00007f0994106800 JavaThread "Service Thread" daemon [_thread_blocked, id=10495, stack(0x00007f0979155000,0x00007f0979256000)]
+  0x00007f09940c5000 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=10497, stack(0x00007f0978f52000,0x00007f0979053000)]
+
+Other Threads:
+  0x00007f0994080800 VMThread "VM Thread" [stack: 0x00007f097a3ae000,0x00007f097a4ae000] [id=10488]
+  0x00007f0994108800 WatcherThread [stack: 0x00007f0979055000,0x00007f0979155000] [id=10496]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000083400000, size: 1996 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ def new generation   total 38720K, used 2080K [0x0000000083400000, 0x0000000085e00000, 0x00000000acd50000)
+  eden space 34432K,   6% used [0x0000000083400000, 0x0000000083608230, 0x00000000855a0000)
+  from space 4288K,   0% used [0x00000000855a0000, 0x00000000855a0000, 0x00000000859d0000)
+  to   space 4288K,   0% used [0x00000000859d0000, 0x00000000859d0000, 0x0000000085e00000)
+ tenured generation   total 86016K, used 0K [0x00000000acd50000, 0x00000000b2150000, 0x0000000100000000)
+   the space 86016K,   0% used [0x00000000acd50000, 0x00000000acd50000, 0x00000000acd50200, 0x00000000b2150000)
+ Metaspace       used 4175K, capacity 4908K, committed 5120K, reserved 1056768K
+  class space    used 334K, capacity 424K, committed 512K, reserved 1048576K
+
+Card table byte_map: [0x00007f097af48000,0x00007f097b32f000] byte_map_base: 0x00007f097ab2e000
+
+Polling page: 0x00007f099b772000
+
+CodeHeap 'non-profiled nmethods': size=120036Kb used=25Kb max_used=25Kb free=120010Kb
+ bounds [0x00007f0982fcc000, 0x00007f098323c000, 0x00007f098a505000]
+CodeHeap 'profiled nmethods': size=120032Kb used=145Kb max_used=145Kb free=119886Kb
+ bounds [0x00007f097ba94000, 0x00007f097bd04000, 0x00007f0982fcc000]
+CodeHeap 'non-nmethods': size=5692Kb used=1005Kb max_used=1005Kb free=4687Kb
+ bounds [0x00007f097b505000, 0x00007f097b775000, 0x00007f097ba94000]
+ total_blobs=451 nmethods=105 adapters=199
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0,256 Thread 0x00007f09940a5000  100       3       java.lang.System::getSecurityManager (4 bytes)
+Event: 0,256 Thread 0x00007f09940a5000 nmethod 100 0x00007f097bab6910 code [0x00007f097bab6ac0, 0x00007f097bab6c10]
+Event: 0,257 Thread 0x00007f09940a5000  101       3       jdk.internal.misc.Unsafe::putObjectRelease (9 bytes)
+Event: 0,257 Thread 0x00007f09940a5000 nmethod 101 0x00007f097bab6c90 code [0x00007f097bab6e40, 0x00007f097bab6fb0]
+Event: 0,257 Thread 0x00007f09940a5000  103       3       java.util.concurrent.ConcurrentHashMap::setTabAt (20 bytes)
+Event: 0,257 Thread 0x00007f09940a5000 nmethod 103 0x00007f097bab7090 code [0x00007f097bab7240, 0x00007f097bab74f0]
+Event: 0,263 Thread 0x00007f09940a5000  104       3       java.lang.AbstractStringBuilder::append (45 bytes)
+Event: 0,264 Thread 0x00007f09940a5000 nmethod 104 0x00007f097bab7590 code [0x00007f097bab77c0, 0x00007f097bab7d38]
+Event: 0,264 Thread 0x00007f09940a5000  105       3       java.lang.String::getBytes (44 bytes)
+Event: 0,264 Thread 0x00007f09940a5000 nmethod 105 0x00007f097bab7f90 code [0x00007f097bab8180, 0x00007f097bab84f8]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (1 events):
+Event: 0,190 Thread 0x00007f0994011000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f0982fd1154 method=java.lang.String.hashCode()I @ 14 c2
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0,248 loading class CGAL/Polygon_mesh_processing/CGAL_Polygon_mesh_processing
+Event: 0,248 loading class CGAL/Polygon_mesh_processing/CGAL_Polygon_mesh_processing done
+Event: 0,249 loading class CGAL/Polygon_mesh_processing/CGAL_Polygon_mesh_processingConstants
+Event: 0,249 loading class CGAL/Polygon_mesh_processing/CGAL_Polygon_mesh_processingConstants done
+Event: 0,251 loading class CGAL/Polygon_mesh_processing/CGAL_Polygon_mesh_processingJNI
+Event: 0,251 loading class CGAL/Polygon_mesh_processing/CGAL_Polygon_mesh_processingJNI done
+Event: 0,257 loading class CGAL/Polyhedron_3/Polyhedron_3_Facet_iterator
+Event: 0,257 loading class CGAL/Polyhedron_3/Polyhedron_3_Facet_iterator done
+Event: 0,258 loading class CGAL/Polyhedron_3/Polyhedron_3_Facet_handle
+Event: 0,258 loading class CGAL/Polyhedron_3/Polyhedron_3_Facet_handle done
+
+
+Dynamic libraries:
+83400000-85e00000 rw-p 00000000 00:00 0 
+85e00000-acd50000 ---p 00000000 00:00 0 
+acd50000-b2150000 rw-p 00000000 00:00 0 
+b2150000-100000000 ---p 00000000 00:00 0 
+100000000-100080000 rw-p 00000000 00:00 0 
+100080000-140000000 ---p 00000000 00:00 0 
+5585cc23c000-5585cc23d000 r-xp 00000000 08:01 14687485                   /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+5585cc43d000-5585cc43e000 r--p 00001000 08:01 14687485                   /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+5585cc43e000-5585cc43f000 rw-p 00002000 08:01 14687485                   /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+5585ccb5a000-5585ccb7b000 rw-p 00000000 00:00 0                          [heap]
+7f095b4a1000-7f095b62c000 r-xp 00000000 08:01 13241813                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polygon_mesh_processing.so
+7f095b62c000-7f095b82c000 ---p 0018b000 08:01 13241813                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polygon_mesh_processing.so
+7f095b82c000-7f095b82d000 r--p 0018b000 08:01 13241813                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polygon_mesh_processing.so
+7f095b82d000-7f095b82f000 rw-p 0018c000 08:01 13241813                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polygon_mesh_processing.so
+7f095b82f000-7f095b8ac000 r-xp 00000000 08:01 14688491                   /usr/lib/x86_64-linux-gnu/libmpfr.so.6.0.1
+7f095b8ac000-7f095baac000 ---p 0007d000 08:01 14688491                   /usr/lib/x86_64-linux-gnu/libmpfr.so.6.0.1
+7f095baac000-7f095baae000 r--p 0007d000 08:01 14688491                   /usr/lib/x86_64-linux-gnu/libmpfr.so.6.0.1
+7f095baae000-7f095baaf000 rw-p 0007f000 08:01 14688491                   /usr/lib/x86_64-linux-gnu/libmpfr.so.6.0.1
+7f095baaf000-7f095bb7c000 r-xp 00000000 08:01 13240741                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Kernel_cpp.so
+7f095bb7c000-7f095bd7b000 ---p 000cd000 08:01 13240741                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Kernel_cpp.so
+7f095bd7b000-7f095bd7d000 r--p 000cc000 08:01 13240741                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Kernel_cpp.so
+7f095bd7d000-7f095bd7f000 rw-p 000ce000 08:01 13240741                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Kernel_cpp.so
+7f095bd7f000-7f095bdfe000 r-xp 00000000 08:01 14688208                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.3.2
+7f095bdfe000-7f095bffe000 ---p 0007f000 08:01 14688208                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.3.2
+7f095bffe000-7f095bfff000 r--p 0007f000 08:01 14688208                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.3.2
+7f095bfff000-7f095c000000 rw-p 00080000 08:01 14688208                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.3.2
+7f095c000000-7f095c06f000 rw-p 00000000 00:00 0 
+7f095c06f000-7f0960000000 ---p 00000000 00:00 0 
+7f0960000000-7f0960021000 rw-p 00000000 00:00 0 
+7f0960021000-7f0964000000 ---p 00000000 00:00 0 
+7f0964000000-7f0964021000 rw-p 00000000 00:00 0 
+7f0964021000-7f0968000000 ---p 00000000 00:00 0 
+7f0968000000-7f096809e000 rw-p 00000000 00:00 0 
+7f096809e000-7f096c000000 ---p 00000000 00:00 0 
+7f096c000000-7f096c021000 rw-p 00000000 00:00 0 
+7f096c021000-7f0970000000 ---p 00000000 00:00 0 
+7f0970000000-7f0970021000 rw-p 00000000 00:00 0 
+7f0970021000-7f0974000000 ---p 00000000 00:00 0 
+7f0974000000-7f0974021000 rw-p 00000000 00:00 0 
+7f0974021000-7f0978000000 ---p 00000000 00:00 0 
+7f0978018000-7f09780ca000 r-xp 00000000 08:01 13240787                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Kernel.so
+7f09780ca000-7f09782ca000 ---p 000b2000 08:01 13240787                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Kernel.so
+7f09782ca000-7f09782cb000 r--p 000b2000 08:01 13240787                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Kernel.so
+7f09782cb000-7f09782cc000 rw-p 000b3000 08:01 13240787                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Kernel.so
+7f09782cc000-7f09782ce000 r-xp 00000000 08:01 13240798                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Java.so
+7f09782ce000-7f09784cd000 ---p 00002000 08:01 13240798                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Java.so
+7f09784cd000-7f09784ce000 r--p 00001000 08:01 13240798                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Java.so
+7f09784ce000-7f09784cf000 rw-p 00002000 08:01 13240798                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Java.so
+7f09784cf000-7f09784d1000 r-xp 00000000 08:01 13240687                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Java_cpp.so
+7f09784d1000-7f09786d0000 ---p 00002000 08:01 13240687                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Java_cpp.so
+7f09786d0000-7f09786d1000 r--p 00001000 08:01 13240687                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Java_cpp.so
+7f09786d1000-7f09786d2000 rw-p 00002000 08:01 13240687                   /home/jon/git/cgal-swig-bindings/build/CGAL_release/lib/libCGAL_Java_cpp.so
+7f09786d2000-7f09786f0000 r-xp 00000000 08:01 14692093                   /usr/lib/x86_64-linux-gnu/libCGAL.so.13.0.1
+7f09786f0000-7f09788ef000 ---p 0001e000 08:01 14692093                   /usr/lib/x86_64-linux-gnu/libCGAL.so.13.0.1
+7f09788ef000-7f09788f0000 r--p 0001d000 08:01 14692093                   /usr/lib/x86_64-linux-gnu/libCGAL.so.13.0.1
+7f09788f0000-7f09788f1000 rw-p 0001e000 08:01 14692093                   /usr/lib/x86_64-linux-gnu/libCGAL.so.13.0.1
+7f09788f1000-7f0978926000 r-xp 00000000 08:01 13241038                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polyhedron_3.so
+7f0978926000-7f0978b26000 ---p 00035000 08:01 13241038                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polyhedron_3.so
+7f0978b26000-7f0978b27000 r--p 00035000 08:01 13241038                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polyhedron_3.so
+7f0978b27000-7f0978b28000 rw-p 00036000 08:01 13241038                   /home/jon/git/cgal-swig-bindings/examples/java/lib/libCGAL_Polyhedron_3.so
+7f0978b28000-7f0978b3f000 r-xp 00000000 08:01 14687688                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnet.so
+7f0978b3f000-7f0978d3e000 ---p 00017000 08:01 14687688                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnet.so
+7f0978d3e000-7f0978d3f000 r--p 00016000 08:01 14687688                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnet.so
+7f0978d3f000-7f0978d40000 rw-p 00017000 08:01 14687688                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnet.so
+7f0978d40000-7f0978d51000 r-xp 00000000 08:01 14687689                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnio.so
+7f0978d51000-7f0978f50000 ---p 00011000 08:01 14687689                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnio.so
+7f0978f50000-7f0978f51000 r--p 00010000 08:01 14687689                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnio.so
+7f0978f51000-7f0978f52000 rw-p 00011000 08:01 14687689                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libnio.so
+7f0978f52000-7f0978f56000 ---p 00000000 00:00 0 
+7f0978f56000-7f0979053000 rw-p 00000000 00:00 0 
+7f0979053000-7f0979054000 ---p 00000000 00:00 0 
+7f0979054000-7f0979155000 rw-p 00000000 00:00 0 
+7f0979155000-7f0979159000 ---p 00000000 00:00 0 
+7f0979159000-7f0979256000 rw-p 00000000 00:00 0 
+7f0979256000-7f097925a000 ---p 00000000 00:00 0 
+7f097925a000-7f0979357000 rw-p 00000000 00:00 0 
+7f0979357000-7f097935b000 ---p 00000000 00:00 0 
+7f097935b000-7f0979458000 rw-p 00000000 00:00 0 
+7f0979458000-7f097945c000 ---p 00000000 00:00 0 
+7f097945c000-7f0979559000 rw-p 00000000 00:00 0 
+7f0979559000-7f097955d000 ---p 00000000 00:00 0 
+7f097955d000-7f097965a000 rw-p 00000000 00:00 0 
+7f097965a000-7f097a1aa000 r--p 00000000 08:01 14686732                   /usr/lib/locale/locale-archive
+7f097a1aa000-7f097a1ae000 ---p 00000000 00:00 0 
+7f097a1ae000-7f097a2ab000 rw-p 00000000 00:00 0 
+7f097a2ab000-7f097a2af000 ---p 00000000 00:00 0 
+7f097a2af000-7f097a3ac000 rw-p 00000000 00:00 0 
+7f097a3ac000-7f097a3ad000 ---p 00000000 00:00 0 
+7f097a3ad000-7f097a92e000 rw-p 00000000 00:00 0 
+7f097a92e000-7f097acae000 ---p 00000000 00:00 0 
+7f097acae000-7f097acd9000 rw-p 00000000 00:00 0 
+7f097acd9000-7f097af48000 ---p 00000000 00:00 0 
+7f097af48000-7f097af5d000 rw-p 00000000 00:00 0 
+7f097af5d000-7f097b094000 ---p 00000000 00:00 0 
+7f097b094000-7f097b0bf000 rw-p 00000000 00:00 0 
+7f097b0bf000-7f097b32e000 ---p 00000000 00:00 0 
+7f097b32e000-7f097b334000 rw-p 00000000 00:00 0 
+7f097b334000-7f097b41a000 ---p 00000000 00:00 0 
+7f097b41a000-7f097b41f000 rw-p 00000000 00:00 0 
+7f097b41f000-7f097b505000 ---p 00000000 00:00 0 
+7f097b505000-7f097b775000 rwxp 00000000 00:00 0 
+7f097b775000-7f097ba94000 ---p 00000000 00:00 0 
+7f097ba94000-7f097bd04000 rwxp 00000000 00:00 0 
+7f097bd04000-7f0982fcc000 ---p 00000000 00:00 0 
+7f0982fcc000-7f098323c000 rwxp 00000000 00:00 0 
+7f098323c000-7f098a505000 ---p 00000000 00:00 0 
+7f098a505000-7f09939e0000 r--s 00000000 08:01 14687698                   /usr/lib/jvm/java-11-openjdk-amd64/lib/modules
+7f09939e0000-7f09939e5000 r-xp 00000000 08:01 14687680                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjimage.so
+7f09939e5000-7f0993be4000 ---p 00005000 08:01 14687680                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjimage.so
+7f0993be4000-7f0993be5000 r--p 00004000 08:01 14687680                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjimage.so
+7f0993be5000-7f0993be6000 rw-p 00005000 08:01 14687680                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjimage.so
+7f0993be6000-7f0993bed000 r-xp 00000000 08:01 14687697                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libzip.so
+7f0993bed000-7f0993dec000 ---p 00007000 08:01 14687697                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libzip.so
+7f0993dec000-7f0993ded000 r--p 00006000 08:01 14687697                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libzip.so
+7f0993ded000-7f0993dee000 rw-p 00007000 08:01 14687697                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libzip.so
+7f0993dee000-7f0993df9000 r-xp 00000000 08:01 15733506                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f0993df9000-7f0993ff8000 ---p 0000b000 08:01 15733506                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f0993ff8000-7f0993ff9000 r--p 0000a000 08:01 15733506                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f0993ff9000-7f0993ffa000 rw-p 0000b000 08:01 15733506                   /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f0993ffa000-7f0994000000 rw-p 00000000 00:00 0 
+7f0994000000-7f0994160000 rw-p 00000000 00:00 0 
+7f0994160000-7f0998000000 ---p 00000000 00:00 0 
+7f0998002000-7f0998078000 rw-p 00000000 00:00 0 
+7f0998078000-7f099808f000 r-xp 00000000 08:01 15733500                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f099808f000-7f099828e000 ---p 00017000 08:01 15733500                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f099828e000-7f099828f000 r--p 00016000 08:01 15733500                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f099828f000-7f0998290000 rw-p 00017000 08:01 15733500                   /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f0998290000-7f0998292000 rw-p 00000000 00:00 0 
+7f0998292000-7f099829d000 r-xp 00000000 08:01 15733517                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f099829d000-7f099849c000 ---p 0000b000 08:01 15733517                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f099849c000-7f099849d000 r--p 0000a000 08:01 15733517                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f099849d000-7f099849e000 rw-p 0000b000 08:01 15733517                   /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f099849e000-7f09984a6000 r-xp 00000000 08:01 15733502                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f09984a6000-7f09986a6000 ---p 00008000 08:01 15733502                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f09986a6000-7f09986a7000 r--p 00008000 08:01 15733502                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f09986a7000-7f09986a8000 rw-p 00009000 08:01 15733502                   /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f09986a8000-7f09986d4000 r-xp 00000000 08:01 14687673                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjava.so
+7f09986d4000-7f09988d3000 ---p 0002c000 08:01 14687673                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjava.so
+7f09988d3000-7f09988d4000 r--p 0002b000 08:01 14687673                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjava.so
+7f09988d4000-7f09988d6000 rw-p 0002c000 08:01 14687673                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libjava.so
+7f09988d6000-7f09988e3000 r-xp 00000000 08:01 14687696                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libverify.so
+7f09988e3000-7f0998ae2000 ---p 0000d000 08:01 14687696                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libverify.so
+7f0998ae2000-7f0998ae4000 r--p 0000c000 08:01 14687696                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libverify.so
+7f0998ae4000-7f0998ae5000 rw-p 0000e000 08:01 14687696                   /usr/lib/jvm/java-11-openjdk-amd64/lib/libverify.so
+7f0998ae5000-7f0998aec000 r-xp 00000000 08:01 15733557                   /lib/x86_64-linux-gnu/librt-2.27.so
+7f0998aec000-7f0998ceb000 ---p 00007000 08:01 15733557                   /lib/x86_64-linux-gnu/librt-2.27.so
+7f0998ceb000-7f0998cec000 r--p 00006000 08:01 15733557                   /lib/x86_64-linux-gnu/librt-2.27.so
+7f0998cec000-7f0998ced000 rw-p 00007000 08:01 15733557                   /lib/x86_64-linux-gnu/librt-2.27.so
+7f0998ced000-7f0998d04000 r-xp 00000000 08:01 15733318                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f0998d04000-7f0998f03000 ---p 00017000 08:01 15733318                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f0998f03000-7f0998f04000 r--p 00016000 08:01 15733318                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f0998f04000-7f0998f05000 rw-p 00017000 08:01 15733318                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f0998f05000-7f09990a2000 r-xp 00000000 08:01 15733479                   /lib/x86_64-linux-gnu/libm-2.27.so
+7f09990a2000-7f09992a1000 ---p 0019d000 08:01 15733479                   /lib/x86_64-linux-gnu/libm-2.27.so
+7f09992a1000-7f09992a2000 r--p 0019c000 08:01 15733479                   /lib/x86_64-linux-gnu/libm-2.27.so
+7f09992a2000-7f09992a3000 rw-p 0019d000 08:01 15733479                   /lib/x86_64-linux-gnu/libm-2.27.so
+7f09992a3000-7f099941c000 r-xp 00000000 08:01 14682980                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f099941c000-7f099961c000 ---p 00179000 08:01 14682980                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f099961c000-7f0999626000 r--p 00179000 08:01 14682980                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f0999626000-7f0999628000 rw-p 00183000 08:01 14682980                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7f0999628000-7f099962c000 rw-p 00000000 00:00 0 
+7f099962c000-7f099a5c9000 r-xp 00000000 08:01 14687703                   /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so
+7f099a5c9000-7f099a7c9000 ---p 00f9d000 08:01 14687703                   /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so
+7f099a7c9000-7f099a88d000 r--p 00f9d000 08:01 14687703                   /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so
+7f099a88d000-7f099a8c5000 rw-p 01061000 08:01 14687703                   /usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so
+7f099a8c5000-7f099a90e000 rw-p 00000000 00:00 0 
+7f099a90e000-7f099a928000 r-xp 00000000 08:01 15733549                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f099a928000-7f099ab27000 ---p 0001a000 08:01 15733549                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f099ab27000-7f099ab28000 r--p 00019000 08:01 15733549                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f099ab28000-7f099ab29000 rw-p 0001a000 08:01 15733549                   /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f099ab29000-7f099ab2d000 rw-p 00000000 00:00 0 
+7f099ab2d000-7f099ab30000 r-xp 00000000 08:01 15733439                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7f099ab30000-7f099ad2f000 ---p 00003000 08:01 15733439                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7f099ad2f000-7f099ad30000 r--p 00002000 08:01 15733439                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7f099ad30000-7f099ad31000 rw-p 00003000 08:01 15733439                   /lib/x86_64-linux-gnu/libdl-2.27.so
+7f099ad31000-7f099ad4d000 r-xp 00000000 08:01 15733588                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f099ad4d000-7f099af4c000 ---p 0001c000 08:01 15733588                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f099af4c000-7f099af4d000 r--p 0001b000 08:01 15733588                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f099af4d000-7f099af4e000 rw-p 0001c000 08:01 15733588                   /lib/x86_64-linux-gnu/libz.so.1.2.11
+7f099af4e000-7f099b135000 r-xp 00000000 08:01 15733416                   /lib/x86_64-linux-gnu/libc-2.27.so
+7f099b135000-7f099b335000 ---p 001e7000 08:01 15733416                   /lib/x86_64-linux-gnu/libc-2.27.so
+7f099b335000-7f099b339000 r--p 001e7000 08:01 15733416                   /lib/x86_64-linux-gnu/libc-2.27.so
+7f099b339000-7f099b33b000 rw-p 001eb000 08:01 15733416                   /lib/x86_64-linux-gnu/libc-2.27.so
+7f099b33b000-7f099b33f000 rw-p 00000000 00:00 0 
+7f099b33f000-7f099b34e000 r-xp 00000000 08:01 14687626                   /usr/lib/jvm/java-11-openjdk-amd64/lib/jli/libjli.so
+7f099b34e000-7f099b54d000 ---p 0000f000 08:01 14687626                   /usr/lib/jvm/java-11-openjdk-amd64/lib/jli/libjli.so
+7f099b54d000-7f099b54e000 r--p 0000e000 08:01 14687626                   /usr/lib/jvm/java-11-openjdk-amd64/lib/jli/libjli.so
+7f099b54e000-7f099b54f000 rw-p 0000f000 08:01 14687626                   /usr/lib/jvm/java-11-openjdk-amd64/lib/jli/libjli.so
+7f099b54f000-7f099b576000 r-xp 00000000 08:01 15733388                   /lib/x86_64-linux-gnu/ld-2.27.so
+7f099b5a3000-7f099b657000 rw-p 00000000 00:00 0 
+7f099b657000-7f099b65b000 ---p 00000000 00:00 0 
+7f099b65b000-7f099b75a000 rw-p 00000000 00:00 0 
+7f099b75e000-7f099b763000 rw-p 00000000 00:00 0 
+7f099b763000-7f099b76a000 ---p 00000000 00:00 0 
+7f099b76a000-7f099b772000 rw-s 00000000 08:01 9962257                    /tmp/hsperfdata_jon/10486
+7f099b772000-7f099b773000 ---p 00000000 00:00 0 
+7f099b773000-7f099b774000 r--p 00000000 00:00 0 
+7f099b774000-7f099b776000 rw-p 00000000 00:00 0 
+7f099b776000-7f099b777000 r--p 00027000 08:01 15733388                   /lib/x86_64-linux-gnu/ld-2.27.so
+7f099b777000-7f099b778000 rw-p 00028000 08:01 15733388                   /lib/x86_64-linux-gnu/ld-2.27.so
+7f099b778000-7f099b779000 rw-p 00000000 00:00 0 
+7ffc130d9000-7ffc130fa000 rw-p 00000000 00:00 0                          [stack]
+7ffc131fb000-7ffc131fe000 r--p 00000000 00:00 0                          [vvar]
+7ffc131fe000-7ffc13200000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+
+VM Arguments:
+java_command: test_pmp
+java_class_path (initial): .
+Launcher Type: SUN_STANDARD
+
+Logging:
+Log output configuration:
+#0: stdout all=warning uptime,level,tags
+#1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+USERNAME=jon
+LD_LIBRARY_PATH=/home/jon/git/cgal-swig-bindings/examples/java/lib
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xd28b70], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xd28b70], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0xd28b70], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0xb2a1f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0xb2a1f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0xd28b70], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR2: [libjvm.so+0xb2a030], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0xb2a180], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0xb2a180], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0xb2a180], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0xb2a180], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.04
+DISTRIB_CODENAME=bionic
+DISTRIB_DESCRIPTION="Ubuntu 18.04.1 LTS"
+uname:Linux 4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019 x86_64
+libc:glibc 2.27 NPTL 2.27 
+rlimit: STACK 8192k, CORE 0k, NPROC 31671, NOFILE 4096, AS infinity, DATA infinity, FSIZE infinity
+load average:2,35 1,24 0,73
+
+/proc/meminfo:
+MemTotal:        8168488 kB
+MemFree:         1627668 kB
+MemAvailable:    4539804 kB
+Buffers:           80112 kB
+Cached:          3319232 kB
+SwapCached:            0 kB
+Active:          3689712 kB
+Inactive:        2528272 kB
+Active(anon):    2241448 kB
+Inactive(anon):   915100 kB
+Active(file):    1448264 kB
+Inactive(file):  1613172 kB
+Unevictable:         568 kB
+Mlocked:             568 kB
+SwapTotal:       2097148 kB
+SwapFree:        2095344 kB
+Dirty:               720 kB
+Writeback:             0 kB
+AnonPages:       2819276 kB
+Mapped:           937096 kB
+Shmem:            337880 kB
+Slab:             183740 kB
+SReclaimable:     140060 kB
+SUnreclaim:        43680 kB
+KernelStack:       13168 kB
+PageTables:        67848 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6181392 kB
+Committed_AS:   11683316 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      174016 kB
+DirectMap2M:     8214528 kB
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0
+cpu_memory_nodes: 0
+active_processor_count: 1
+cpu_quota: -1
+cpu_period: 100000
+cpu_shares: -1
+memory_limit_in_bytes: -1
+memory_and_swap_limit_in_bytes: -2
+memory_soft_limit_in_bytes: -1
+memory_usage_in_bytes: 6367907840
+memory_max_usage_in_bytes: 0
+
+
+CPU:total 1 (initial active 1) (1 cores per cpu, 1 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, 3dnowpref, lzcnt, tsc, tscinvbit
+CPU Model and flags from /proc/cpuinfo:
+model name	: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid pni pclmulqdq monitor ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase avx2 invpcid rdseed clflushopt flush_l1d
+
+Memory: 4k page, physical 8168488k(1627668k free), swap 2097148k(2095344k free)
+
+vm_info: OpenJDK 64-Bit Server VM (10.0.2+13-Ubuntu-1ubuntu0.18.04.4) for linux-amd64 JRE (10.0.2+13-Ubuntu-1ubuntu0.18.04.4), built on Nov 13 2018 12:53:39 by "buildd" with gcc 7.3.0
+
+END.
