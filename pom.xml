@@ -27,13 +27,20 @@
         <targetPath>build</targetPath>
         <generator>Unix Makefiles</generator>
         <classifier>linux-x86_64</classifier>
-        <environmentVariables>
-          <BUILD_PYTHON>OFF</BUILD_PYTHON>
-	  <JAVA_OUTDIR_PREFIX>lib</JAVA_OUTDIR_PREFIX>
-        </environmentVariables>
         <options>
           <option>-DBUILD_PYTHON=OFF</option>
+	<option>-DJAVA_OUTDIR_PREFIX=lib</option>
         </options>
+      </configuration>
+    </execution>
+ <execution>
+      <id>cmake-compile</id>
+      <goals>
+        <goal>compile</goal>
+      </goals>
+      <configuration>
+        <projectDirectory>build</projectDirectory>
+        <classifier>linux-x86_64</classifier>
       </configuration>
     </execution>
   </executions>
