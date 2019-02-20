@@ -10,4 +10,34 @@
         <maven.compiler.source>10</maven.compiler.source>
         <maven.compiler.target>10</maven.compiler.target>
     </properties>
+<build>
+    <plugins>
+<plugin>
+  <groupId>com.googlecode.cmake-maven-project</groupId>
+  <artifactId>cmake-maven-plugin</artifactId>
+  <version>3.7.2-b1</version>
+  <executions>
+    <execution>
+      <id>cmake-generate</id>
+      <goals>
+        <goal>generate</goal>
+      </goals>
+      <configuration>
+        <sourcePath>.</sourcePath>
+        <targetPath>build</targetPath>
+        <generator>Unix Makefiles</generator>
+        <classifier>linux-x86_64</classifier>
+        <environmentVariables>
+          <BUILD_PYTHON>OFF</BUILD_PYTHON>
+	  <JAVA_OUTDIR_PREFIX>lib</JAVA_OUTDIR_PREFIX>
+        </environmentVariables>
+        <options>
+          <option>-DBUILD_PYTHON=OFF</option>
+        </options>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+</plugins>
+</build>
 </project>
