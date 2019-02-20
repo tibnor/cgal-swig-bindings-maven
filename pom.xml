@@ -29,7 +29,7 @@
         <classifier>linux-x86_64</classifier>
         <options>
           <option>-DBUILD_PYTHON=OFF</option>
-	<option>-DJAVA_OUTDIR_PREFIX=lib</option>
+	<option>-DJAVA_OUTDIR_PREFIX=..</option>
         </options>
       </configuration>
     </execution>
@@ -41,6 +41,10 @@
       <configuration>
         <projectDirectory>build</projectDirectory>
         <classifier>linux-x86_64</classifier>
+        <options>
+	  <option>--</option>
+          <option>--jobs=4</option>
+        </options>
       </configuration>
     </execution>
   </executions>
